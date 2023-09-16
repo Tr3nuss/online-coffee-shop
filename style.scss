@@ -59,11 +59,70 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 .intro {
-    background-image: url(img/intro.jpg)
+    background-image: url(img/intro.jpg);
+    height: 720px;
+    margin-top: 18px;
 }
 
+.intro-title {
+    padding-top: 199px;
+    @include wordLayout(60px, normal, 900);
+    text-transform: uppercase;
+}
 
+.intro-description {
+    @include wordLayout(18px, normal, 400);
+    color: #DFDFDF;
+}
+
+.intro-buttons {
+
+    .golden-button {
+        width: 200px;
+        height: 50px;
+        background: #C7A17A;
+        border-radius: 10px;
+        
+        div {
+           padding: 17px 60px;
+           @include wordLayout(15px, normal, 500);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+    }
+
+    .transparent-button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #666681;
+        background: rgba(199, 161, 122, 0.00);
+        margin-left: 20px;
+
+        div {
+            padding: 15px 51px;
+            @include wordLayout(15px, normal, 500);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+    }
+
+    margin-top: 35px;
+    display: flex;
+
+}
 
 
 
