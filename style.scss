@@ -1,0 +1,70 @@
+@mixin wordLayout($FontSize, $FontStyle, $FontWeight) {
+    font-size: $FontSize;
+    font-style: $FontStyle;
+    font-weight: $FontWeight;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    background: #020204;
+}
+
+.container {
+    margin: 0px 360px; 
+}
+
+.first-header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include wordLayout(14px, normal, 600);
+    text-transform: uppercase;
+}
+
+.first-header-items {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 10px;
+}
+
+
+.second-header-line {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-header-items {
+    display: flex;
+    gap: 35px;
+    
+    li {
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+
+    @include wordLayout(15px, normal, 600)
+}
+
+
+
+
+
+
+
+.intro {
+    background-image: url(img/intro.jpg)
+}
+
+
+
+
+
+
