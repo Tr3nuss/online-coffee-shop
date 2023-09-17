@@ -53,13 +53,13 @@ body {
     @include wordLayout(15px, normal, 600)
 }
 
+.header-images {
 
+    img  {
+        margin-right: 30px;
+    }
 
-
-
-
-
-
+}
 
 
 
@@ -124,6 +124,163 @@ body {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.main-description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+
+}
+
+.main-block {
+    width: 600px;
+    height: 330px;
+    background: #14141D;
+    border-radius: 10px;
+
+    .main-block-title {
+        padding: 30px 0px 15px 29px;
+        @include wordLayout(24px, normal, 900);
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+    .main-block-description {
+        padding-left: 29px;
+        @include wordLayout(18px, normal, 400);
+        color: #DFDFDF;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-catalog {
+    margin-top: 80px;
+
+    .catalog {
+        @include wordLayout(40px, normal, 900);
+    }
+
+
+}
+
+.catalog-items {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 386px 386px 386px;
+    grid-gap: 21px;
+
+    .catalog-block {
+        width: 386px;
+        height: 372px;
+        background: #14141D;
+        border-radius: 10px;
+
+        img {
+            padding: 20px 150px 0px 140px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+.main-news {
+    margin-top: 80px;
+}
+
+
+.news-items {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 21px;
+
+    .news-block {
+        width: 386px;
+        height: 226px;
+        background: #14141D;
+    }
+
+}
+
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #14141D;
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+footer {
+    margin-top: 106px;
+    
+
+    .footer-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        ul {
+
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    margin: 0px 622px 0px 360px;
+}
 
 
 
