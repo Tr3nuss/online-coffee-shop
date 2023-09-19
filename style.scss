@@ -201,6 +201,28 @@ body {
             padding: 20px 150px 0px 140px;
         }
 
+        .catalog-block-title {
+            @include wordLayout(24px, normal, 900);
+            text-transform: uppercase;
+            margin: 42px 0px 0px 20px;
+        }
+ 
+        .prices {
+            display: flex;
+
+            .price, .old-price {
+                margin: 30px 0px 0px 20px;
+            }
+    
+            .old-price {
+                text-decoration: line-through;
+                color: #818181;
+            }
+
+           
+
+        }
+
     }
 }
 
@@ -226,6 +248,19 @@ body {
         width: 386px;
         height: 226px;
         background: #14141D;
+
+        .news-block-title {
+            @include wordLayout(24px, normal, 900);
+            text-transform: uppercase;
+            margin: 20px 0px 0px 21px;
+        }
+
+        .news-block-description {
+            margin: 13px 0px 0px 21px;
+            @include wordLayout(16px, normal, 400);
+            color: #DFDFDF;
+        }
+
     }
 
 }
@@ -247,7 +282,7 @@ body {
 
 
 footer {
-    margin-top: 106px;
+    margin-top: 86px;
     
 
     .footer-line {
@@ -260,9 +295,12 @@ footer {
 
             li {
                 list-style-type: none;
+                margin-bottom: 20px;
+
                 a {
                     text-decoration: none;
                     color: #FFF;
+                    
                 }
             }
         }
@@ -276,6 +314,12 @@ footer {
 .footer-logo {
     display: flex;
     align-items: center;
+
+    div {
+        color: #F8DABF;
+        @include wordLayout(20px, normal, 900);
+    }
+
 }
 
 .footer-container {
